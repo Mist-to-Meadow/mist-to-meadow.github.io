@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>Mist-to-Meadow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       body {
         display: flex;
@@ -13,21 +14,45 @@
         background-color: #fff;
       }
       .content {
-        margin-top: -50px; /* shift everything slightly upward */
+        margin-top: -50px; /* nudge slightly above center */
         text-align: center;
+        padding: 0 20px;   /* breathing room on small screens */
+        width: 100%;
       }
       img {
-        width: 600px;
-        height: 253px;
+        width: 100%;
+        max-width: 600px;
+        height: auto;
         margin-bottom: 30px;
       }
       p {
         max-width: 850px;
-        font-size: 18px; /* slightly smaller */
+        font-size: 18px;
         line-height: 1.6;
         color: #488f74;
         text-align: justify;
         margin: 0 auto;
+      }
+
+      /* Mobile and tablet adjustments */
+      @media (max-width: 768px) {
+        p {
+          font-size: 20px;   /* larger for readability on phones */
+          line-height: 1.7;
+        }
+        .content {
+          margin-top: -40px; /* slightly smaller nudge on short screens */
+        }
+      }
+
+      /* Very small phones */
+      @media (max-width: 380px) {
+        p {
+          font-size: 19px;
+        }
+        .content {
+          margin-top: -30px;
+        }
       }
     </style>
   </head>
