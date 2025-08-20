@@ -5,36 +5,44 @@
       body {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: center; /* keep centered vertically */
         align-items: center;
-        height: 100vh; /* full viewport height */
-        margin: 0;     /* remove default margins */
+        height: 100vh;
+        margin: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        background-color: #fff;
+      }
+      .content {
+        margin-top: -50px; /* shift everything slightly upward */
         text-align: center;
-        font-family: Arial, sans-serif;
-        line-height: 1.5;
-        padding: 20px;
       }
       img {
         width: 600px;
         height: 253px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
       }
       p {
-        max-width: 800px;
-        font-size: 18px;
+        max-width: 850px;
+        font-size: 18px; /* slightly smaller */
+        line-height: 1.6;
+        color: #488f74;
+        text-align: justify;
+        margin: 0 auto;
       }
     </style>
   </head>
   <body>
-    <img src="mist-to-meadow-logo.png" alt="Mist-to-Meadow Logo" />
-    <p>
-      Mist-to-Meadow is a project to transform barren coastal lands into thriving
-      green ecosystems by capturing water directly from the air. From the sun-drenched
-      shores of the Mediterranean and the dry coasts of the Sea of Cortez to islands in
-      the Caribbean, vast areas lie beside oceans yet remain arid and lifeless. Not from
-      lack of proximity to water, but from the inability to access it. These barren
-      coastlines contribute to desertification, reduce biodiversity, and miss opportunities
-      for carbon capture.
-    </p>
+    <div class="content">
+      <img src="mist-to-meadow-logo.png" alt="Mist-to-Meadow Logo" />
+      <p>
+        Mist-to-Meadow is a project to transform barren coastal lands into thriving
+        green ecosystems by capturing water directly from the air. From the sun-drenched
+        shores of the Mediterranean and the dry coasts of the Sea of Cortez to islands in
+        the Caribbean, vast areas lie beside oceans yet remain arid and lifeless. Not from
+        lack of proximity to water, but from the inability to access it. These barren
+        coastlines contribute to desertification, reduce biodiversity, and miss opportunities
+        for carbon capture.
+      </p>
+    </div>
   </body>
 </html>
