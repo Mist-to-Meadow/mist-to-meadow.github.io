@@ -2,6 +2,8 @@
   <head>
     <title>Mist-to-Meadow</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Import Montserrat from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
       body {
         display: flex;
@@ -10,7 +12,7 @@
         align-items: center;
         height: 100vh;
         margin: 0;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: 'Montserrat', sans-serif;
         background-color: #fff;
       }
       .content {
@@ -18,7 +20,7 @@
         text-align: center;
         width: 100%;
         max-width: 900px;
-        padding: 0 40px; /* default desktop padding */
+        padding: 0 40px;
         box-sizing: border-box;
       }
       img {
@@ -28,9 +30,9 @@
         margin-bottom: 30px;
       }
       p {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 1.6;
-        color: #488f74;
+        color: #8ab1a1;
         text-align: justify;
         margin: 0 auto;
       }
@@ -38,23 +40,24 @@
       /* Tablet and mobile adjustments */
       @media (max-width: 768px) {
         .content {
-          padding: 0 20px; /* add side padding on smaller screens */
+          padding: 0 20px;
           margin-top: -40px;
         }
         p {
-          font-size: 20px;
-          line-height: 1.7;
+          font-size: 18px;
+          line-height: 1.5; /* decreased for mobile */
         }
       }
 
       /* Very small phones */
       @media (max-width: 380px) {
         .content {
-          padding: 0 15px; /* tighter but still padded */
+          padding: 0 15px;
           margin-top: -30px;
         }
         p {
-          font-size: 19px;
+          font-size: 17px;
+          line-height: 1.4; /* tighter on very small screens */
         }
       }
     </style>
