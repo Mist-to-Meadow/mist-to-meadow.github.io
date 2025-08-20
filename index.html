@@ -16,8 +16,10 @@
       .content {
         margin-top: -50px; /* nudge slightly above center */
         text-align: center;
-        padding: 0 20px;   /* breathing room on small screens */
         width: 100%;
+        max-width: 900px;
+        padding: 0 40px; /* default desktop padding */
+        box-sizing: border-box;
       }
       img {
         width: 100%;
@@ -26,7 +28,6 @@
         margin-bottom: 30px;
       }
       p {
-        max-width: 850px;
         font-size: 18px;
         line-height: 1.6;
         color: #488f74;
@@ -34,24 +35,26 @@
         margin: 0 auto;
       }
 
-      /* Mobile and tablet adjustments */
+      /* Tablet and mobile adjustments */
       @media (max-width: 768px) {
-        p {
-          font-size: 20px;   /* larger for readability on phones */
-          line-height: 1.7;
-        }
         .content {
-          margin-top: -40px; /* slightly smaller nudge on short screens */
+          padding: 0 20px; /* add side padding on smaller screens */
+          margin-top: -40px;
+        }
+        p {
+          font-size: 20px;
+          line-height: 1.7;
         }
       }
 
       /* Very small phones */
       @media (max-width: 380px) {
+        .content {
+          padding: 0 15px; /* tighter but still padded */
+          margin-top: -30px;
+        }
         p {
           font-size: 19px;
-        }
-        .content {
-          margin-top: -30px;
         }
       }
     </style>
