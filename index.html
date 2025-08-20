@@ -27,13 +27,13 @@
         width: 100%;
         max-width: 600px;
         height: auto;
-        margin-bottom: 30px;
+        margin-bottom: 15px; /* reduced spacing */
       }
       p {
         font-size: 16px;
         line-height: 1.6;
         color: #8ab1a1;
-        text-align: justify;
+        text-align: justify; /* justified on desktop */
         margin: 0 auto;
       }
 
@@ -45,7 +45,8 @@
         }
         p {
           font-size: 18px;
-          line-height: 1.5; /* decreased for mobile */
+          line-height: 1.5;
+          text-align: left; /* remove justify on mobile */
         }
       }
 
@@ -57,7 +58,8 @@
         }
         p {
           font-size: 17px;
-          line-height: 1.4; /* tighter on very small screens */
+          line-height: 1.4;
+          text-align: left;
         }
       }
     </style>
